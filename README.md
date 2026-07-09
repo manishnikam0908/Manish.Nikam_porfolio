@@ -67,21 +67,33 @@ modern-portfolio/
     |-- about/
     |-- contact/
     |-- services/
-    |-- testimonials/
     |-- work/
     |-- _app.jsx
     |-- index.jsx
   |- public/
   |- styles/
     |-- globals.css
+  |- .env.example
+  |- .env/.env.local
   |- .eslintrc.json
   |- .gitignore
+  |- 2nd.png
+  |- C++.pdf
+  |- car-3.png
+  |- Certificate_outskill.pdf
+  |- cloths-2.png
+  |- DBMS.pdf
+  |- gitshop-1.png
+  |- JAVA.pdf
   |- netlify.toml
   |- next.config.js
   |- package-lock.json
   |- package.json
   |- postcss.config.js
+  |- project manager-4.png
+  |- SQL.pdf
   |- tailwind.config.js
+  |- TechShala-Certificate-Manish-Nikam-Industrial-Hackathon-2026.pdf
   |- variants.js
 ```
 <!--- FOLDER_STRUCTURE_END --->
@@ -125,7 +137,6 @@ You might encounter some bugs while using this app. You are more than welcome to
 Useful resources and dependencies that are used in Modern Portfolio.
 
 <!--- DEPENDENCIES_START --->
-- [@next/font](https://www.npmjs.com/package/@next/font): ^13.4.4
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.14
 - [eslint](https://www.npmjs.com/package/eslint): 8.41.0
 - [eslint-config-next](https://www.npmjs.com/package/eslint-config-next): 13.4.3
@@ -135,7 +146,7 @@ Useful resources and dependencies that are used in Modern Portfolio.
 - [react](https://www.npmjs.com/package/react): 18.2.0
 - [react-countup](https://www.npmjs.com/package/react-countup): ^6.4.2
 - [react-dom](https://www.npmjs.com/package/react-dom): 18.2.0
-- [react-icons](https://www.npmjs.com/package/react-icons): ^4.8.0
+- [react-icons](https://www.npmjs.com/package/react-icons): ^5.7.0
 - [react-tsparticles](https://www.npmjs.com/package/react-tsparticles): ^2.9.3
 - [swiper](https://www.npmjs.com/package/swiper): ^12.1.2
 - [tailwind-scrollbar](https://www.npmjs.com/package/tailwind-scrollbar): ^3.0.4
