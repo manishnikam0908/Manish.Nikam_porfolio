@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
-import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
 
 import { fadeIn } from "../variants";
+
+const ParticlesContainer = dynamic(() => import("../components/ParticlesContainer"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
@@ -20,8 +24,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Web Developer <br /> &{" "}
+            <span className="text-accent">AI Builder</span>
           </motion.h1>
 
           {/* subtitle */}
@@ -32,10 +36,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate,
-            exercitationem harum, quia nulla temporibus deleniti libero veniam
-            vero beatae numquam ducimus illum ab similique ipsam tempore fugit
-            quod laudantium debitis.
+            I design and build modern, high-performance websites and intelligent AI applications. From premium 3D web experiences to real-world AI projects, I turn ideas into fast, interactive digital products.
           </motion.p>
 
           {/* btn */}

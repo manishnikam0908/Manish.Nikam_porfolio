@@ -13,20 +13,33 @@ const Contact = () => {
 
     const myForm = event.target;
     const formData = new FormData(myForm);
+    const data = Object.fromEntries(formData.entries());
 
-    fetch("/__forms.html", {
+    // Custom configuration for FormSubmit
+    data["_captcha"] = "false";
+    data["_subject"] = `New Portfolio Message from ${data.name || "Visitor"}`;
+
+    fetch("https://formsubmit.co/ajax/manishnikam0908@gmail.com", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify(data),
     })
       .then((res) => {
-        if (res.status === 200) {
+        if (res.ok) {
           alert("Thank you. I will get back to you ASAP.");
+          myForm.reset();
         } else {
+          alert("Oops! There was a problem submitting your form.");
           console.log(res);
         }
       })
-      .catch((error) => console.log(error))
+      .catch((error) => {
+        alert("Oops! There was a problem submitting your form.");
+        console.log(error);
+      })
       .finally(() => setIsLoading(false));
   };
 
@@ -43,7 +56,7 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center mb-12"
           >
-            Let's <span className="text-accent">connect.</span>
+            Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
 
           {/* form */}
@@ -109,7 +122,7 @@ const Contact = () => {
               aria-disabled={isLoading}
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let's talk
+                Let&apos;s talk
               </span>
 
               <BsArrowRight

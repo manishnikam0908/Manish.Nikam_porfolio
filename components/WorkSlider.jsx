@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
-import { Pagination } from "swiper";
+import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -13,48 +13,24 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
+          title: "Gitshop",
+          path: "/gitshop-1.png",
+          link: "https://gifts-bice.vercel.app/",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
+          title: "Cloths Website",
+          path: "/cloths-2.png",
+          link: "https://clothswebsite-lilac.vercel.app/",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Car Website",
+          path: "/car-3.png",
+          link: "https://car-website-sage.vercel.app/",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb4.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb1.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb2.jpg",
-          link: "http://example.com",
-        },
-        {
-          title: "title",
-          path: "/thumb3.jpg",
-          link: "http://example.com",
+          title: "Project Manager",
+          path: "/project-manager-4.png",
+          link: "https://project-manger-jgue.vercel.app/",
         },
       ],
     },
