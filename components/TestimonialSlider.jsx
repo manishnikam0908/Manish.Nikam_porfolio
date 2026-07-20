@@ -11,23 +11,23 @@ const testimonialData = [
   {
     image: "/t-avt-1.png",
     name: "Anne Smith",
-    position: "Customer",
+    position: "Client",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Working together was an absolute pleasure! The attention to detail, modern UI design, and quick project delivery exceeded all expectations.",
   },
   {
     image: "/t-avt-2.png",
     name: "Jane Doe",
-    position: "Customer",
+    position: "Product Lead",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Exceptional web development skills and great communication throughout the process. Highly recommended for building modern web applications.",
   },
   {
     image: "/t-avt-3.png",
     name: "Jhon Doe",
-    position: "Customer",
+    position: "Design Director",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "Delivered a fast, sleek, and highly interactive project with smooth animations and clean code. Truly professional quality work!",
   },
 ];
 

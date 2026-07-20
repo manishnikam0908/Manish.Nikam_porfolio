@@ -35,8 +35,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-              tempora eligendi, quisquam tempore sint reiciendis.
+              I offer end-to-end web development, UI design, and AI solution building. From crafting responsive web interfaces to integrating intelligent automation, I deliver scalable digital products.
             </motion.p>
           </div>
 
