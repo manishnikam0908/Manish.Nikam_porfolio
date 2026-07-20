@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import { HiArrowDownTray } from "react-icons/hi2";
 
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
@@ -40,17 +41,47 @@ const Home = () => {
           </motion.p>
 
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 xl:hidden relative z-20">
             <ProjectsBtn />
+            <a
+              href="/Manish_Nikam_Resume.pdf"
+              download="Manish_Nikam_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn rounded-full border border-white/50 px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group bg-primary/40 backdrop-blur-sm hover:shadow-lg hover:shadow-accent/20 cursor-pointer"
+            >
+              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 text-sm tracking-wider font-semibold">
+                Download Resume
+              </span>
+              <HiArrowDownTray
+                className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px] text-accent"
+                aria-hidden
+              />
+            </a>
           </div>
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden xl:flex items-center gap-x-6 z-20"
           >
             <ProjectsBtn />
+            <a
+              href="/Manish_Nikam_Resume.pdf"
+              download="Manish_Nikam_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn rounded-full border border-white/50 px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group bg-primary/40 backdrop-blur-sm hover:shadow-lg hover:shadow-accent/20 cursor-pointer"
+            >
+              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500 text-sm tracking-wider font-semibold">
+                Download Resume
+              </span>
+              <HiArrowDownTray
+                className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px] text-accent"
+                aria-hidden
+              />
+            </a>
           </motion.div>
         </div>
       </div>
