@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HiArrowDownTray } from "react-icons/hi2";
 
 import {
   RiGithubLine,
@@ -38,6 +39,19 @@ const Socials = () => {
           <span className="sr-only">{social.name}</span>
         </Link>
       ))}
+
+      {/* Download Resume Button */}
+      <a
+        href="/Manish_Nikam_Resume.pdf"
+        download="Manish_Nikam_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-x-2 text-xs font-semibold tracking-wider uppercase border border-white/40 hover:border-accent bg-white/5 hover:bg-accent/15 px-3.5 py-1.5 rounded-full transition-all duration-300 text-white hover:text-accent group shadow-sm cursor-pointer ml-1"
+        title="Download Resume"
+      >
+        <span>Resume</span>
+        <HiArrowDownTray className="text-sm group-hover:translate-y-0.5 transition-transform duration-300 text-accent" aria-hidden />
+      </a>
     </div>
   );
 };
